@@ -11,7 +11,12 @@ import androidx.fragment.app.Fragment;
 
 import com.client.R;
 
+import butterknife.ButterKnife;
+import butterknife.Unbinder;
+
 public abstract class BaseFragment extends Fragment {
+
+    Unbinder unbinder;
 
     @Nullable
     @Override
@@ -23,6 +28,7 @@ public abstract class BaseFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        unbinder = ButterKnife.bind(this,view);
         initView();
         initPersenter();
         initData();

@@ -5,9 +5,6 @@ import android.content.Context;
 import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 
-import com.client.base.BaseA;
-import com.client.base.BaseB;
-
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -29,12 +26,6 @@ public class ExampleInstrumentedTest {
 
     @Test
     public void testClass(){
-
-        BaseA baseA = new BaseA();
-        BaseB baseB = new BaseB();
-
-        baseA.init();
-        baseB.init();
 
     }
 }

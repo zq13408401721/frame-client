@@ -7,6 +7,7 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 
 import com.client.base.BaseActivity;
+import com.client.interfaces.login.IRegister;
 
 public class TestActivity extends BaseActivity {
 
